@@ -1,0 +1,71 @@
+& when (@media-common =true) {
+    .mixin-title (@f-s, @l-h) {
+        text-align: center;
+        margin-bottom: 0;
+        color: #000000;
+        font-weight: 900;
+        margin: 15px 0 15px 15px;
+        font-size: @f-s;
+        line-height: @l-h;
+        padding: 0 17px 17px 17px;
+    }
+    .div--flex {
+        display: flex;
+        justify-content: space-around;
+        &__left {
+            width: 50%;
+            div {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+    .home-page-main-banner-section {
+        margin-bottom: -250px;
+        position: relative;
+        background-image: url("../../images/bgimage.png");
+        height: 900px;
+        background-size: cover;
+        .main--white {
+            max-width: 755px;
+            padding: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: white;
+            transform: translate(-50%, -50%);
+            div {
+                text-align: center;
+            }
+            h1 {
+                text-align: start !important;
+                .mixin-title (45px, 45px);
+            }
+            h2 {
+                text-align: start;
+                .mixin-title (27px, 27px);
+            }
+            p {
+                padding: 0 17px 17px 17px;
+                text-align: center;
+                border-style: none;
+                border-width: 1px;
+                border-radius: 0px;
+                color: #919191;
+                font-weight: 400;
+                padding: 0;
+                margin: 0;
+                font-size: 22px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+// Tablet (>= 768px)
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__m) {
+}
+
+@media only screen and (max-width: @screen__m) {
+
+}

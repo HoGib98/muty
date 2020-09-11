@@ -1,0 +1,15 @@
+<div class="main--white">
+    <div class="div--flex">
+        <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-main-icon')->toHtml(); ?>
+        <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-main-title')->toHtml(); ?>
+    </div>
+    <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-main-content')->toHtml(); ?>
+    <div class="div--flex">
+        <div class="div--flex__left">
+            <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-main-eu-uk')->toHtml(); ?>    
+        </div>
+        <div>
+            <?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-main-us')->toHtml(); ?>
+        </div>
+    </div>
+</div>
